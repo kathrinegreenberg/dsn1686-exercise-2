@@ -89,15 +89,25 @@ a {
   transform: scale(1.1, 1.1); }
 
 @font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.eot?29840450');
-  src: url('../font/fontello.eot?29840450#iefix') format('embedded-opentype'), url('../font/fontello.woff?29840450') format('woff'), url('../font/fontello.ttf?29840450') format('truetype'), url('../font/fontello.svg?29840450#fontello') format('svg');
+  font-family: 'custom-font';
+  src: url('../fonts/custom-font.eot?29840450');
+  src: url('../fonts/custom-font.eot?29840450#iefix') format('embedded-opentype'), url('../fonts/custom-font.woff?29840450') format('woff'), url('../fonts/custom-font.ttf?29840450') format('truetype'), url('../fonts/custom-font.svg?29840450#fontello') format('svg');
   font-weight: normal;
   font-style: normal; }
 
-/* line 84, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?29840450#fontello') format('svg');
+  }
+}
+*/
+/* line 94, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+  font-family: "custom-font";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -106,23 +116,34 @@ a {
   width: 1em;
   margin-right: 0.2em;
   text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-  margin-left: 0.2em; }
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 100, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+/* line 125, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 .icon-phone:before {
   content: '\e800'; }
 
-/* line 101, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+/* '' */
+/* line 126, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 .icon-glass:before {
   content: '\e801'; }
 
-/* line 102, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+/* '' */
+/* line 127, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 .icon-beaker:before {
   content: '\e802'; }
 
-/* line 103, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+/* line 128, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 .icon-magic:before {
   content: '\e803'; }
