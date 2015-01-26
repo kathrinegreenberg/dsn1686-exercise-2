@@ -24,28 +24,28 @@ html {
 }
 
 h1 {
-	font-family: 'Lato', sans-serif;
 	text-align: center;
 	margin-top: 5rem;
-	color: #8F46C1;
+	color: $primary;
+	font-family: $font;
 }
 
 h2 {
-	font-family: 'Lato', sans-serif;
 	text-align: center;
 	margin-top: 1rem;
-	color: #B686D6;
 	font-size: 22px;
+	color: $tertiary;
+	font-family: $font;
 }
 
 a {
 	text-decoration: none;
-	color: #FBFAFA;
-	font-family: 'Lato', sans-serif;
+	color: $primary;
+	font-family: $font;
 }
 
 .button {
-	background-color: #B686D6;
+	@include button($primary, $secondary, $background);
 	display: inline-block;
 	text-align: center;
 	margin: 2rem 3rem;
@@ -67,5 +67,4 @@ a {
 	-o-transform:scale(1.1,1.1);
 	-ms-transform:scale(1.1,1.1);
 	transform:scale(1.1,1.1);
-	background-color: #A66CCE;
 }

@@ -37,28 +37,38 @@ html {
 
 /* line 26, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 h1 {
-  font-family: 'Lato', sans-serif;
   text-align: center;
   margin-top: 5rem;
-  color: #8F46C1; }
+  color: #8F46C1;
+  font-family: 'Lato', sans-serif; }
 
 /* line 33, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 h2 {
-  font-family: 'Lato', sans-serif;
   text-align: center;
   margin-top: 1rem;
+  font-size: 22px;
   color: #B686D6;
-  font-size: 22px; }
+  font-family: 'Lato', sans-serif; }
 
 /* line 41, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 a {
   text-decoration: none;
-  color: #FBFAFA;
+  color: #8F46C1;
   font-family: 'Lato', sans-serif; }
 
 /* line 47, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 .button {
-  background-color: #B686D6;
+  background-color: #8F46C1;
+  border-radius: 80px;
+  padding-top: 0.65rem;
+  margin: 2rem 3rem;
+  display: inline-block;
+  test-decoration: none;
+  color: #FBFAFA;
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  transition: all ease 0.5s;
   display: inline-block;
   text-align: center;
   margin: 2rem 3rem;
@@ -68,10 +78,12 @@ a {
   border-radius: 80px;
   padding-top: 0.65rem;
   transition: all ease 0.5s; }
+  /* line 12, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/mixins */
+  .button:hover {
+    background-color: #A66CCE; }
 
 /* line 64, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
 .button:hover {
   -webkit-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  background-color: #A66CCE; }
+  transform: scale(1.1, 1.1); }
