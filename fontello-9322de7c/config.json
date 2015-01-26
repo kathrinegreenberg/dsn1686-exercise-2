@@ -1,0 +1,42 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "2a4cad58fb0038c05b129b34909fb682",
+      "css": "phone",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M707 60H305C270 60 240 89 240 124V856C240 926 360 940 505 940H507C663 940 770 926 770 856V124C770 89 742 60 707 60ZM506 903C488 903 473 888 473 870 473 852 488 837 506 837 524 837 539 852 539 870 539 889 524 903 506 903ZM730 790H290V150H730V790Z",
+        "width": 1000
+      },
+      "search": [
+        "phone"
+      ]
+    },
+    {
+      "uid": "cfaa8fbbdcc7bb8d636cb974aad1f9b9",
+      "css": "glass",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f444c61b0d2c9966016d7ddb12f5837",
+      "css": "beaker",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ff70f7b3228702e0d590e60ed3b90bea",
+      "css": "magic",
+      "code": 59395,
+      "src": "fontawesome"
+    }
+  ]
+}
