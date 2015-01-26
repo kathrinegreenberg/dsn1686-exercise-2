@@ -1,0 +1,77 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 7, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 17, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 21, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+.bod {
+  text-align: center;
+  margin-top: 11%; }
+
+/* line 26, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 5rem;
+  color: #8F46C1; }
+
+/* line 33, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  color: #B686D6;
+  font-size: 22px; }
+
+/* line 41, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+a {
+  text-decoration: none;
+  color: #FBFAFA;
+  font-family: 'Lato', sans-serif; }
+
+/* line 47, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+.button {
+  background-color: #B686D6;
+  display: inline-block;
+  text-align: center;
+  margin: 2rem 3rem;
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  padding-top: 0.65rem;
+  transition: all ease 0.5s; }
+
+/* line 64, /Users/kathrinegreenberg/Documents/School/Web Dev/dsn1686-exercise-2/scss/components/main */
+.button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  background-color: #A66CCE; }
